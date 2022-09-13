@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "728114342582",
+    "project_id": "barista-43fb1",
+    "storage_bucket": "barista-43fb1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728114342582:android:0261de1bb577a71e519417",
+        "android_client_info": {
+          "package_name": "com.mergenc.barista"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728114342582-tv1nkn0rf5mdjk246lttmitcjfunluk3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCy1s75UIxK2Nbe6jgRZqzZw4StXYVkWUw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "728114342582-tv1nkn0rf5mdjk246lttmitcjfunluk3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
