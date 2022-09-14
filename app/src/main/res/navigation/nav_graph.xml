@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/chooseTypeFragment">
+
+    <fragment
+        android:id="@+id/chooseTypeFragment"
+        android:name="com.mergenc.barista.ui.choosetype.ChooseTypeFragment"
+        android:label="fragment_choose_type"
+        tools:layout="@layout/fragment_choose_type" >
+        <action
+            android:id="@+id/action_chooseTypeFragment_to_cashierFragment"
+            app:destination="@id/cashierFragment" />
+        <action
+            android:id="@+id/action_chooseTypeFragment_to_customerFragment"
+            app:destination="@id/customerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cashierFragment"
+        android:name="com.mergenc.barista.ui.cashier.CashierFragment"
+        android:label="fragment_cashier"
+        tools:layout="@layout/fragment_cashier" />
+    <fragment
+        android:id="@+id/customerFragment"
+        android:name="com.mergenc.barista.ui.customer.CustomerFragment"
+        android:label="fragment_customer"
+        tools:layout="@layout/fragment_customer" />
+</navigation>
