@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.findNavController
 import com.mergenc.barista.databinding.FragmentChooseTypeBinding
 
 class ChooseTypeFragment : Fragment() {
@@ -23,5 +24,19 @@ class ChooseTypeFragment : Fragment() {
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.buttonCashier.setOnClickListener {
+            val action = ChooseTypeFragmentDirections.actionChooseTypeFragmentToCashierFragment()
+            it.findNavController().navigate(action)
+        }
+
+        binding.buttonCustomer.setOnClickListener {
+            val action = ChooseTypeFragmentDirections.actionChooseTypeFragmentToCustomerFragment()
+            it.findNavController().navigate(action)
+        }
     }
 }
