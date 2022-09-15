@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Barista</string>
+    <string name="customer_qr"><u><b>QR kodu baristaya gösteriniz.</b></u></string>
+    <string name="customer_coin">Coin kullanacaksanız ödeme\n anında belirtiniz.</string>
 </resources>
