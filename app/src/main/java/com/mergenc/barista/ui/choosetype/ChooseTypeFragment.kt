@@ -1,5 +1,6 @@
 package com.mergenc.barista.ui.choosetype
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -7,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.findNavController
 import com.mergenc.barista.databinding.FragmentChooseTypeBinding
+import com.mergenc.barista.ui.cashier.CashierActivity
 
 class ChooseTypeFragment : Fragment() {
     private var _binding: FragmentChooseTypeBinding? = null
@@ -30,8 +32,10 @@ class ChooseTypeFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding.buttonCashier.setOnClickListener {
-            val action = ChooseTypeFragmentDirections.actionChooseTypeFragmentToCashierFragment()
-            it.findNavController().navigate(action)
+            val intent = Intent(getActivity(), CashierActivity::class.java)
+            getActivity()?.startActivity(intent)
+
+
         }
 
         binding.buttonCustomer.setOnClickListener {
