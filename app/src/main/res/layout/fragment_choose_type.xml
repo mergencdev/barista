@@ -1,14 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/barista_grey"
     tools:context=".ui.choosetype.ChooseTypeFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="1"
+        android:foregroundGravity="center"
+        android:rowCount="2"
+        android:useDefaultMargins="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-</FrameLayout>
+        <Button
+            android:id="@+id/button_cashier"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_frame_unfilled"
+            android:backgroundTint="@color/barista_red_dark"
+            android:fontFamily="sans-serif-medium"
+            android:text="Kasiyerim"
+            android:textAllCaps="false"
+            android:textColor="@color/barista_grey"
+            android:textSize="17sp" />
+
+        <Button
+            android:id="@+id/button_customer"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_button_frame"
+            android:fontFamily="sans-serif-medium"
+            android:text="Müşteriyim (Mobil ödeme)"
+            android:textAllCaps="false"
+            android:textColor="@color/barista_red_dark"
+            android:textSize="17sp"
+            tools:layout_editor_absoluteX="31dp"
+            tools:layout_editor_absoluteY="99dp" />
+
+    </GridLayout>
+
+    <ImageView
+        android:id="@+id/iv_coffee"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/coffee"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
