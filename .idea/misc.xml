@@ -3,6 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_button_frame.xml" value="0.2055" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_button_frame_unfilled.xml" value="0.2055" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/custom_button_frame.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_cashier.xml" value="0.2191780821917808" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_choose_type.xml" value="0.25" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_customer.xml" value="0.21978021978021978" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_total_amount.xml" value="0.10989583333333333" />
         <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/layout_actionbar.xml" value="0.176" />
       </map>
     </option>
