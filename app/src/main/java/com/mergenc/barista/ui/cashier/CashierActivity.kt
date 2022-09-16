@@ -4,10 +4,14 @@ import android.annotation.SuppressLint
 import android.content.pm.PackageManager
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.SurfaceHolder
+import android.view.View
 import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import android.widget.Toast
+import android.widget.*
+import androidx.appcompat.app.AlertDialog
+import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.gms.vision.CameraSource
@@ -56,7 +60,7 @@ class CashierActivity : AppCompatActivity() {
             .setAutoFocusEnabled(true) //you should add this feature
             .build()
 
-        binding.cameraSurfaceView.getHolder().addCallback(object : SurfaceHolder.Callback {
+        binding.cameraSurfaceView.holder.addCallback(object : SurfaceHolder.Callback {
             @SuppressLint("MissingPermission")
             override fun surfaceCreated(holder: SurfaceHolder) {
                 try {
@@ -98,21 +102,44 @@ class CashierActivity : AppCompatActivity() {
                 if (barcodes.size() == 1) {
                     scannedValue = barcodes.valueAt(0).rawValue
 
-
-                    //Don't forget to add this line printing value or finishing activity must run on main thread
                     runOnUiThread {
                         // okuma isleminden sonra yapilacak islem (qr kodun detaylari)
                         cameraSource.stop()
-                        Toast.makeText(
-                            this@CashierActivity,
-                            "value- $scannedValue",
-                            Toast.LENGTH_SHORT
-                        ).show()
-                        finish()
+                        binding.barcodeLine.clearAnimation()
+
+                        val mDialogView = LayoutInflater.from(this@CashierActivity)
+                            .inflate(R.layout.custom_price_dialog, null)
+
+                        val mBuilder =
+                            AlertDialog.Builder(this@CashierActivity).setView(mDialogView).show()
+                        mBuilder.window?.setBackgroundDrawableResource(android.R.color.transparent)
+
+
+                        val editTextNumber = mDialogView.findViewById<EditText>(R.id.editTextNumber)
+                        val radioGroupPrice = mDialogView.findViewById<RadioGroup>(R.id.rg_price)
+
+                        radioGroupPrice.setOnCheckedChangeListener { group, checkedId ->
+                            val radio: RadioButton = mDialogView.findViewById(checkedId)
+
+                            when (checkedId) {
+                                R.id.rb_15 -> {
+                                    editTextNumber.visibility = View.GONE
+                                }
+                                R.id.rb_30 -> {
+                                    editTextNumber.visibility = View.GONE
+                                }
+                                R.id.rb_50 -> {
+                                    editTextNumber.visibility = View.GONE
+                                }
+                                R.id.rb_other -> {
+                                    editTextNumber.visibility = View.VISIBLE
+                                }
+                            }
+                        }
+
                     }
                 } else {
                     Toast.makeText(this@CashierActivity, "value- else", Toast.LENGTH_SHORT).show()
-
                 }
             }
         })
