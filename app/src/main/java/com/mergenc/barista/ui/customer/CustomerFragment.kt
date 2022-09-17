@@ -30,6 +30,7 @@ class CustomerFragment : Fragment() {
 
     private lateinit var database: DatabaseReference
     private lateinit var qrId: String
+    private val args: CustomerFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -48,9 +49,7 @@ class CustomerFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val args: CustomerFragmentArgs by navArgs()
         qrId = args.qrId
-
         insertIdToDatabase()
         generateQrCode()
     }
@@ -68,8 +67,6 @@ class CustomerFragment : Fragment() {
 
     @SuppressLint("SimpleDateFormat")
     private fun generateQrCode() {
-        // random number int
-
         val writer = QRCodeWriter()
         try {
             val bitMatrix = writer.encode(qrId, BarcodeFormat.QR_CODE, 250, 250)
