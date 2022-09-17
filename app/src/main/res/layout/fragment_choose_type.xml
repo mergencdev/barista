@@ -27,7 +27,7 @@
             android:background="@drawable/custom_button_frame_unfilled"
             android:backgroundTint="@color/barista_red_dark"
             android:fontFamily="sans-serif-medium"
-            android:text="Kasiyerim"
+            android:text="@string/choose_type_cashier"
             android:textAllCaps="false"
             android:textColor="@color/barista_grey"
             android:textSize="17sp" />
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/custom_button_frame"
             android:fontFamily="sans-serif-medium"
-            android:text="Müşteriyim (Mobil ödeme)"
+            android:text="@string/choose_type_customer"
             android:textAllCaps="false"
             android:textColor="@color/barista_red_dark"
             android:textSize="17sp"
@@ -55,6 +55,7 @@
         app:layout_constraintBottom_toTopOf="@+id/gridLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/coffee_beans" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
