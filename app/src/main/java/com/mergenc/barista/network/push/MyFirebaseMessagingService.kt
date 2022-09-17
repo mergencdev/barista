@@ -1,5 +1,6 @@
 package com.mergenc.barista.network.push
 
+import android.annotation.SuppressLint
 import android.app.Notification
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -20,8 +21,8 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
 
     private val TAG = "FireBaseMessagingService"
-    var NOTIFICATION_CHANNEL_ID = "com.mergenc.barista"
-    val NOTIFICATION_ID = 100
+    private var NOTIFICATION_CHANNEL_ID = "com.mergenc.barista"
+    private val NOTIFICATION_ID = 100
 
     override fun onMessageReceived(remoteMessage: RemoteMessage) {
         super.onMessageReceived(remoteMessage)
@@ -46,6 +47,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
     }
 
 
+    @SuppressLint("UnspecifiedImmutableFlag")
     private fun showNotification(
         context: Context,
         title: String?,
@@ -99,7 +101,7 @@ class MyFirebaseMessagingService : FirebaseMessagingService() {
 
     private fun getNotificationIcon(): Int {
         val useWhiteIcon =
-            Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP
+            true
         return if (useWhiteIcon) R.mipmap.ic_launcher else R.mipmap.ic_launcher
     }
 
