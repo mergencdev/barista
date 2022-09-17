@@ -62,12 +62,14 @@
             android:layout_height="match_parent"
             android:layout_margin="32dp"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/iv_qr_code"
                 android:layout_width="250dp"
                 android:layout_height="250dp"
+                android:contentDescription="@string/qr_code"
                 android:src="@drawable/ic_launcher_background"
                 android:visibility="invisible"
                 tools:layout_editor_absoluteX="125dp"
@@ -79,9 +81,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
                 android:fontFamily="sans-serif-medium"
-                android:text="15.09.2022 / 11:20"
-                android:visibility="invisible"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:visibility="invisible" />
 
         </LinearLayout>
 
