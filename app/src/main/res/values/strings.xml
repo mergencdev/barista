@@ -2,4 +2,12 @@
     <string name="app_name">Barista</string>
     <string name="customer_qr"><u><b>QR kodu baristaya gösteriniz.</b></u></string>
     <string name="customer_coin">Coin kullanacaksanız ödeme\n anında belirtiniz.</string>
+    <string name="price_dialog_enter_price">Yüklemek istediğiniz tutarı giriniz</string>
+    <string name="price_dialog_15">15₺</string>
+    <string name="price_dialog_30">30₺</string>
+    <string name="price_dialog_50">50₺</string>
+    <string name="price_dialog_other">Diğer</string>
+    <string name="price_dialog_enter_price_et">Tutarı giriniz</string>
+    <string name="price_dialog_cancel">Vazgeç</string>
+    <string name="price_dialog_okay">Tamam</string>
 </resources>
