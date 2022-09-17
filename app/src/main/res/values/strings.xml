@@ -14,4 +14,9 @@
     <string name="choose_type_customer">Müşteriyim (Mobil ödeme)</string>
     <string name="coffee_beans">coffee beans</string>
     <string name="qr_code">QR code</string>
+    <string name="total_amount_balance">Bakiye:</string>
+    <string name="total_amount_credit_card">Kredi kartı ile öde</string>
+    <string name="credit_card">credit card</string>
+    <string name="total_amount_coin_wallet">Coin Wallet ile öde</string>
+    <string name="coin_wallet">coin wallet</string>
 </resources>
