@@ -21,8 +21,7 @@ class ChooseTypeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentChooseTypeBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onDestroyView() {
@@ -33,16 +32,16 @@ class ChooseTypeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        qrId =  (1..999).random().toString()
-
         binding.buttonCashier.setOnClickListener {
-            val intent = Intent(getActivity(), CashierActivity::class.java)
+            qrId = (1..999).random().toString()
+            val intent = Intent(activity, CashierActivity::class.java)
             intent.putExtra("qrId", qrId)
             activity?.startActivity(intent)
         }
 
         binding.buttonCustomer.setOnClickListener {
-            val action = ChooseTypeFragmentDirections.actionChooseTypeFragmentToCustomerFragment(qrId)
+            val action =
+                ChooseTypeFragmentDirections.actionChooseTypeFragmentToCustomerFragment(qrId)
             it.findNavController().navigate(action)
         }
     }
