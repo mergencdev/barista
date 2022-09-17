@@ -12,7 +12,6 @@ import android.view.animation.Animation
 import android.view.animation.AnimationUtils
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
-import androidx.cardview.widget.CardView
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import com.google.android.gms.vision.CameraSource
@@ -66,7 +65,7 @@ class CashierActivity : AppCompatActivity() {
             if (it.exists()) {
                 qrCodeIdFirebase = it.child("id").value as String
                 if (scannedValue == qrCodeIdFirebase) {
-                    Toast.makeText(this, "QR ID: $qrCodeIdFirebase", Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(this, "QR ID: $qrCodeIdFirebase", Toast.LENGTH_SHORT).show()
                     showPriceDialog()
                 } else {
                     Toast.makeText(this, "QR kod tanımlanamadı.", Toast.LENGTH_SHORT).show()
@@ -92,7 +91,7 @@ class CashierActivity : AppCompatActivity() {
         val buttonOkay = mDialogView.findViewById<Button>(R.id.button_okay)
         val buttonCancel = mDialogView.findViewById<Button>(R.id.button_cancel)
 
-        radioGroupPrice.setOnCheckedChangeListener { group, checkedId ->
+        radioGroupPrice.setOnCheckedChangeListener { _, checkedId ->
             val radio: RadioButton = mDialogView.findViewById(checkedId)
 
             when (checkedId) {
