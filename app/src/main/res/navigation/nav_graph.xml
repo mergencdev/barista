@@ -11,20 +11,16 @@
         android:label="fragment_choose_type"
         tools:layout="@layout/fragment_choose_type" >
         <action
-            android:id="@+id/action_chooseTypeFragment_to_cashierFragment"
-            app:destination="@id/cashierFragment" />
-        <action
             android:id="@+id/action_chooseTypeFragment_to_customerFragment"
             app:destination="@id/customerFragment" />
     </fragment>
     <fragment
-        android:id="@+id/cashierFragment"
-        android:name="com.mergenc.barista.ui.cashier.CashierFragment"
-        android:label="fragment_cashier"
-        tools:layout="@layout/fragment_cashier" />
-    <fragment
         android:id="@+id/customerFragment"
         android:name="com.mergenc.barista.ui.customer.CustomerFragment"
         android:label="fragment_customer"
-        tools:layout="@layout/fragment_customer" />
+        tools:layout="@layout/fragment_customer" >
+        <argument
+            android:name="qrId"
+            app:argType="string" />
+    </fragment>
 </navigation>
