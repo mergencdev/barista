@@ -14,6 +14,8 @@ class ChooseTypeFragment : Fragment() {
     private var _binding: FragmentChooseTypeBinding? = null
     private val binding get() = _binding!!
 
+    private lateinit var qrId: String
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -31,15 +33,16 @@ class ChooseTypeFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        qrId =  (1..999).random().toString()
+
         binding.buttonCashier.setOnClickListener {
             val intent = Intent(getActivity(), CashierActivity::class.java)
-            getActivity()?.startActivity(intent)
-
-
+            intent.putExtra("qrId", qrId)
+            activity?.startActivity(intent)
         }
 
         binding.buttonCustomer.setOnClickListener {
-            val action = ChooseTypeFragmentDirections.actionChooseTypeFragmentToCustomerFragment()
+            val action = ChooseTypeFragmentDirections.actionChooseTypeFragmentToCustomerFragment(qrId)
             it.findNavController().navigate(action)
         }
     }
