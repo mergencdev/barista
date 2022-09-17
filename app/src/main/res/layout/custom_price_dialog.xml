@@ -30,7 +30,7 @@
                 android:layout_marginTop="32dp"
                 android:layout_marginBottom="16dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Yüklemek istediğiniz tutarı giriniz"
+                android:text="@string/price_dialog_enter_price"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -52,7 +52,7 @@
                     android:button="@android:color/transparent"
                     android:elevation="4dp"
                     android:gravity="center"
-                    android:text="15₺"
+                    android:text="@string/price_dialog_15"
                     android:textColor="@drawable/custom_radio_text" />
 
                 <RadioButton
@@ -65,7 +65,7 @@
                     android:button="@android:color/transparent"
                     android:elevation="4dp"
                     android:gravity="center"
-                    android:text="30₺"
+                    android:text="@string/price_dialog_30"
                     android:textColor="@drawable/custom_radio_text" />
 
                 <RadioButton
@@ -78,7 +78,7 @@
                     android:button="@android:color/transparent"
                     android:elevation="4dp"
                     android:gravity="center"
-                    android:text="50₺"
+                    android:text="@string/price_dialog_50"
                     android:textColor="@drawable/custom_radio_text" />
 
                 <RadioButton
@@ -91,7 +91,7 @@
                     android:button="@android:color/transparent"
                     android:elevation="4dp"
                     android:gravity="center"
-                    android:text="Diğer" />
+                    android:text="@string/price_dialog_other" />
 
             </RadioGroup>
 
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:ems="10"
-                android:hint="Tutarı giriniz"
+                android:hint="@string/price_dialog_enter_price_et"
                 android:inputType="number"
                 android:visibility="gone" />
 
@@ -119,12 +119,11 @@
                     android:layout_marginEnd="32dp"
                     android:background="@drawable/custom_button_frame"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Vazgeç"
+                    android:text="@string/price_dialog_cancel"
                     android:textAllCaps="false"
                     android:textColor="@color/barista_red_dark"
                     android:textSize="17sp"
-                    tools:layout_editor_absoluteX="31dp"
-                    tools:layout_editor_absoluteY="99dp" />
+                    tools:ignore="ButtonStyle" />
 
                 <Button
                     android:id="@+id/button_okay"
@@ -133,10 +132,11 @@
                     android:background="@drawable/custom_button_frame_unfilled"
                     android:backgroundTint="@color/barista_green"
                     android:fontFamily="sans-serif-medium"
-                    android:text="Tamam"
+                    android:text="@string/price_dialog_okay"
                     android:textAllCaps="false"
                     android:textColor="@color/barista_grey"
-                    android:textSize="17sp" />
+                    android:textSize="17sp"
+                    tools:ignore="ButtonStyle" />
 
             </LinearLayout>
 
