@@ -3,7 +3,6 @@ package com.mergenc.barista.ui.customer
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
 import android.graphics.Color
-import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.util.Log
@@ -11,7 +10,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.navigation.fragment.navArgs
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
@@ -20,7 +18,6 @@ import com.google.zxing.WriterException
 import com.google.zxing.qrcode.QRCodeWriter
 import com.mergenc.barista.databinding.FragmentCustomerBinding
 import com.mergenc.barista.network.realtimedatabase.QRCodeID
-import com.mergenc.barista.ui.choosetype.ChooseTypeFragmentDirections
 import java.text.SimpleDateFormat
 import java.util.*
 
@@ -37,8 +34,7 @@ class CustomerFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentCustomerBinding.inflate(inflater, container, false)
-        val view = binding.root
-        return view
+        return binding.root
     }
 
     override fun onDestroyView() {
