@@ -10,4 +10,7 @@
     <string name="price_dialog_enter_price_et">Tutarı giriniz</string>
     <string name="price_dialog_cancel">Vazgeç</string>
     <string name="price_dialog_okay">Tamam</string>
+    <string name="choose_type_cashier">Kasiyerim</string>
+    <string name="choose_type_customer">Müşteriyim (Mobil ödeme)</string>
+    <string name="coffee_beans">coffee beans</string>
 </resources>
