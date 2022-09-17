@@ -210,13 +210,14 @@
 
             <ImageView
                 android:id="@+id/iv_wallet"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_weight="1"
-                android:src="@drawable/wallet" />
+                android:src="@drawable/wallet"
+                android:contentDescription="@string/coin_wallet" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -224,7 +225,7 @@
                 android:layout_marginEnd="75dp"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
-                android:text="Coin Wallet ile öde"
+                android:text="@string/total_amount_coin_wallet"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -233,7 +234,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
-                android:text="Bakiye: "
+                android:text="@string/total_amount_balance"
                 android:textColor="@color/black"
                 android:textSize="16sp" />
 
@@ -265,13 +266,14 @@
 
             <ImageView
                 android:id="@+id/iv_credit_card"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginStart="8dp"
                 android:layout_marginEnd="16dp"
                 android:layout_weight="1"
-                android:src="@drawable/credit_card" />
+                android:src="@drawable/credit_card"
+                android:contentDescription="@string/credit_card" />
 
             <TextView
                 android:layout_width="wrap_content"
@@ -279,7 +281,7 @@
                 android:layout_marginEnd="84dp"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
-                android:text="Kredi kartı ile öde"
+                android:text="@string/total_amount_credit_card"
                 android:textColor="@color/black"
                 android:textSize="20sp" />
 
@@ -288,7 +290,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
-                android:text="Bakiye: "
+                android:text="@string/total_amount_balance"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 android:visibility="invisible" />
