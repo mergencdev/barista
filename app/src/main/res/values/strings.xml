@@ -19,4 +19,5 @@
     <string name="credit_card">credit card</string>
     <string name="total_amount_coin_wallet">Coin Wallet ile öde</string>
     <string name="coin_wallet">coin wallet</string>
+    <string name="crash">crash</string>
 </resources>
