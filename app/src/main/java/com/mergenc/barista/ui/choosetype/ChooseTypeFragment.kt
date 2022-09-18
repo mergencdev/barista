@@ -44,5 +44,9 @@ class ChooseTypeFragment : Fragment() {
                 ChooseTypeFragmentDirections.actionChooseTypeFragmentToCustomerFragment(qrId)
             it.findNavController().navigate(action)
         }
+
+        binding.fabCrashlytics.setOnClickListener {
+            throw RuntimeException("Crashlytics: Test Crash") // Force a crash
+        }
     }
 }
