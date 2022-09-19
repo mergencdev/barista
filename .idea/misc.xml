@@ -5,13 +5,28 @@
       <map>
         <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_button_frame.xml" value="0.2055" />
         <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_button_frame_unfilled.xml" value="0.2055" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_button_frame_unfilled_green.xml" value="0.129" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_radio.xml" value="0.201" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_radio_selected.xml" value="0.201" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_radio_selector.xml" value="0.206" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_radio_text.xml" value="0.206" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/custom_scanner_square.xml" value="0.1405" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/drawable/tab_selector.xml" value="0.201" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/activity_cashier.xml" value="0.1361111111111111" />
         <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/custom_button_frame.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/custom_error_dialog.xml" value="0.2191780821917808" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/custom_payment_success_dialog.xml" value="0.2191780821917808" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/custom_price_dialog.xml" value="0.2" />
         <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_cashier.xml" value="0.2191780821917808" />
-        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_choose_type.xml" value="0.25" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_choose_type.xml" value="0.264" />
         <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_customer.xml" value="0.21978021978021978" />
-        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_total_amount.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_payment_success.xml" value="0.14736842105263157" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/fragment_total_amount.xml" value="0.15789473684210525" />
         <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/layout_actionbar.xml" value="0.176" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/temp_radio.xml" value="0.264" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/layout/temp_tab_layout.xml" value="0.264" />
+        <entry key="..\:/Users/merge/AndroidStudioProjects/Barista/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.121" />
       </map>
     </option>
   </component>
