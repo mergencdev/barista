@@ -20,4 +20,10 @@
     <string name="total_amount_coin_wallet">Coin Wallet ile öde</string>
     <string name="coin_wallet">coin wallet</string>
     <string name="crash">crash</string>
+    <string name="insufficient_balance">insufficient balance</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="payment_success">ÖDEMENİZ ALINDI</string>
+    <string name="background_coffee_image">background coffee image</string>
+    <string name="homepage">homepage</string>
 </resources>
