@@ -22,5 +22,30 @@
         <argument
             android:name="qrId"
             app:argType="string" />
+        <action
+            android:id="@+id/action_customerFragment_to_totalAmountFragment"
+            app:destination="@id/totalAmountFragment"
+            app:enterAnim="@android:anim/slide_in_left"
+            app:exitAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/totalAmountFragment"
+        android:name="com.mergenc.barista.ui.totalamount.TotalAmountFragment"
+        android:label="fragment_total_amount"
+        tools:layout="@layout/fragment_total_amount" >
+        <argument
+            android:name="price"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_totalAmountFragment_to_paymentSuccessFragment"
+            app:destination="@id/paymentSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentSuccessFragment"
+        android:name="com.mergenc.barista.ui.paymentsuccess.PaymentSuccessFragment"
+        android:label="fragment_payment_success"
+        tools:layout="@layout/fragment_payment_success" >
+        <argument android:name="balance"
+            app:argType="string" />
     </fragment>
 </navigation>
