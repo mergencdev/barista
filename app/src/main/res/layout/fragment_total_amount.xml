@@ -222,7 +222,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginEnd="75dp"
+                android:layout_marginEnd="67dp"
                 android:fontFamily="sans-serif-condensed"
                 android:gravity="center"
                 android:text="@string/total_amount_coin_wallet"
@@ -239,6 +239,7 @@
                 android:textSize="16sp" />
 
             <TextView
+                android:id="@+id/tv_balance"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="16dp"
